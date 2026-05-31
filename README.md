@@ -10,7 +10,7 @@
 
 ## 🌟 Live Demo
 
-> **Live URL:** [https://spsiamahmed.github.io/bangladesh-top-1](https://bangladeshtop1.com) *(Replace with your actual domain)*
+> **Live URL:** [https://spsiamahmed.github.io/bangladesh-top-1](https://spsiamahmed.github.io/bangladesh-top-1) *
 
 ---
 
