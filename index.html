@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Bangladesh TOP 1 | Md Siam - Official Free Fire Esports Hub</title>
+    <meta name="description" content="Watch the best Free Fire gameplay, esports highlights, and pro tournament strategies from Bangladesh TOP 1, led by Md Siam. Join the ultimate BD gaming hub!">
+    <meta name="keywords" content="Bangladesh TOP 1, Md Siam, Free Fire Bangladesh Esports, BD Top 1 Gaming, Free Fire Pro Team Bangladesh, Md Siam Free Fire Live, Best Free Fire Players in BD, Bangladesh Gaming Community Website">
+    <meta name="author" content="Md Siam - Bangladesh TOP 1">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="googlebot" content="index, follow">
+    <meta name="language" content="English, Bengali">
+    <meta name="geo.region" content="BD">
+    <meta name="geo.placename" content="Kishorganj, Bangladesh">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.bangladeshtop1.com">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bangladesh TOP 1 | Md Siam - Official Free Fire Esports Hub">
+    <meta property="og:description" content="Watch the best Free Fire gameplay, esports highlights, and pro tournament strategies from Bangladesh TOP 1, led by Md Siam. Join the ultimate BD gaming hub!">
+    <meta property="og:site_name" content="Bangladesh TOP 1">
+    <meta property="og:url" content="https://www.bangladeshtop1.com">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bangladesh TOP 1 | Md Siam - Free Fire Esports">
+    <meta name="twitter:description" content="Official home of Bangladesh TOP 1 Free Fire Esports team led by Md Siam.">
+    
+    <!-- Structured Data / Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsTeam",
+      "name": "Bangladesh TOP 1",
+      "alternateName": "BD Top 1",
+      "sport": "Esports",
+      "founder": {
+        "@type": "Person",
+        "name": "Md Siam"
+      },
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Free Fire Esports"
+      },
+      "location": {
+        "@type": "City",
+        "name": "Kishorganj",
+        "addressCountry": "Bangladesh"
+      }
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='85'>🔥</text></svg>">
+    
+    <!-- Google Fonts - Gaming Theme -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .logo, .nav-links a, .stat-card .value, .btn {
+            font-family: 'Orbitron', monospace;
+        }
+
+        /* Free Fire Themed Animated Background */
+        .ff-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: radial-gradient(circle at 20% 30%, #1a0a0a 0%, #0a0505 60%, #000 100%);
+        }
+
+        .ff-bg::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            background: radial-gradient(circle, rgba(255, 70, 85, 0.12) 0%, transparent 60%);
+            animation: rotateBg 40s linear infinite;
+        }
+
+        @keyframes rotateBg {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Fire Particles Effect */
+        .fire-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .fire-particle {
+            position: absolute;
+            background: radial-gradient(circle, #ff4655, #ff9f4a);
+            border-radius: 50%;
+            opacity: 0.08;
+            animation: floatFire 15s infinite ease-in-out;
+        }
+
+        @keyframes floatFire {
+            0%, 100% { transform: translateY(0) translateX(0) scale(1); }
+            50% { transform: translateY(-60px) translateX(30px) scale(1.2); }
+        }
+
+        /* Modern Gaming Navbar - FIXED */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(12px);
+            padding: 0.8rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 2px solid #ff4655;
+            box-shadow: 0 0 20px rgba(255, 70, 85, 0.2);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+        }
+
+        .logo-icon {
+            background: linear-gradient(135deg, #ff4655, #ff9f4a);
+            padding: 8px 14px;
+            border-radius: 12px;
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0 0 5px rgba(0,0,0,0.5);
+        }
+
+        .logo-text {
+            font-size: 1.3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ff4655, #ff9f4a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .logo-text span {
+            color: #ff4655;
+            background: none;
+            -webkit-background-clip: unset;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: 0.3s;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #ff4655, #ff9f4a);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-highlight {
+            background: linear-gradient(135deg, #ff4655, #ff9f4a);
+            padding: 8px 22px !important;
+            border-radius: 30px;
+        }
+
+        .nav-highlight::after {
+            display: none !important;
+        }
+
+        .nav-highlight:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255,70,85,0.5);
+        }
+
+        .menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        /* Close button for mobile */
+        .close-menu {
+            display: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 7rem 5% 3rem;
+        }
+
+        /* Hero Section - Free Fire Style */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 5rem;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 70, 85, 0.2);
+            border-left: 3px solid #ff4655;
+            padding: 0.4rem 1rem;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2.2rem, 6vw, 4rem);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content h1 span {
+            background: linear-gradient(135deg, #ff4655, #ff9f4a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero-content p {
+            color: #bbb;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        /* UID Card */
+        .uid-card {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 1.2rem;
+            border: 1px solid rgba(255, 70, 85, 0.4);
+            margin: 1.5rem 0;
+        }
+
+        .uid-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .uid-item:last-child {
+            border-bottom: none;
+        }
+
+        .uid-item i {
+            width: 30px;
+            color: #ff4655;
+        }
+
+        .copy-btn {
+            background: linear-gradient(135deg, #ff4655, #ff9f4a);
+            border: none;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            margin-left: 0.8rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat .number {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #ff4655;
+        }
+
+        /* Hero Image with Free Fire Style */
+        .hero-image {
+            position: relative;
+            text-align: center;
+        }
+
+        .hero-image .glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 80%;
+            background: radial-gradient(circle, rgba(255,70,85,0.3), transparent);
+            border-radius: 50%;
+            filter: blur(40px);
+        }
+
+        .ff-character-img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            position: relative;
+            z-index: 1;
+            filter: drop-shadow(0 0 25px rgba(255,70,85,0.5));
+            animation: floatCharacter 3s ease-in-out infinite;
+        }
+
+        @keyframes floatCharacter {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.2rem;
+            margin: 3rem 0;
+        }
+
+        .stat-card {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px);
+            border-radius: 16px;
+            padding: 1.5rem 0.8rem;
+            text-align: center;
+            border: 1px solid rgba(255, 70, 85, 0.3);
+            transition: all 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            border-color: #ff4655;
+            box-shadow: 0 0 20px rgba(255,70,85,0.2);
+        }
+
+        .stat-card i {
+            font-size: 2rem;
+            color: #ff4655;
+            margin-bottom: 0.8rem;
+        }
+
+        .stat-card .value {
+            font-size: 1.6rem;
+            font-weight: 800;
+        }
+
+        /* Section Styles */
+        .section-header {
+            text-align: center;
+            margin: 3rem 0 2rem;
+        }
+
+        .section-header .tag {
+            color: #ff4655;
+            letter-spacing: 3px;
+            font-size: 0.7rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px);
+            border-radius: 20px;
+            padding: 1.8rem;
+            border: 1px solid rgba(255, 70, 85, 0.2);
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #ff4655;
+        }
+
+        .card-icon {
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, rgba(255,70,85,0.2), rgba(255,159,74,0.1));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.2rem;
+        }
+
+        .card-icon i {
+            font-size: 1.8rem;
+            color: #ff4655;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .card p {
+            color: #aaa;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .card ul {
+            list-style: none;
+            margin-top: 0.8rem;
+        }
+
+        .card ul li {
+            padding: 0.4rem 0;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        .card ul li i {
+            color: #ff4655;
+            margin-right: 0.5rem;
+        }
+
+        /* Offer Section */
+        .offer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.2rem;
+            margin: 2rem 0;
+        }
+
+        .offer-card {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 16px;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            border: 1px solid rgba(255, 70, 85, 0.2);
+            transition: 0.3s;
+        }
+
+        .offer-card:hover {
+            border-color: #ff4655;
+            transform: translateY(-3px);
+        }
+
+        .offer-card i {
+            font-size: 2rem;
+            color: #ff4655;
+            margin-bottom: 0.8rem;
+        }
+
+        .offer-card h4 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .offer-card p {
+            color: #aaa;
+            font-size: 0.8rem;
+        }
+
+        /* Roster Section */
+        .roster-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .roster-card {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px solid rgba(255, 70, 85, 0.3);
+            transition: 0.3s;
+        }
+
+        .roster-card:hover {
+            transform: scale(1.02);
+            border-color: #ff4655;
+        }
+
+        .roster-card i {
+            font-size: 2.5rem;
+            color: #ff4655;
+            margin-bottom: 0.8rem;
+        }
+
+        .roster-card h4 {
+            font-size: 1.1rem;
+        }
+
+        .roster-card p {
+            color: #ff9f4a;
+            font-size: 0.8rem;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, rgba(255,70,85,0.1), rgba(255,159,74,0.05));
+            border-radius: 28px;
+            padding: 2.5rem;
+            text-align: center;
+            margin: 3rem 0;
+            border: 1px solid rgba(255,70,85,0.3);
+        }
+
+        .contact-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-section p {
+            color: #aaa;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff4655, #ff9f4a);
+            padding: 0.8rem 2rem;
+            border-radius: 40px;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .contact-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255,70,85,0.5);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.3rem;
+        }
+
+        .social-icon:hover {
+            background: #ff4655;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid rgba(255,70,85,0.2);
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+            .hero-stats {
+                justify-content: center;
+            }
+            .uid-card {
+                text-align: left;
+            }
+            .stats-grid, .offer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .menu-btn {
+                display: block;
+            }
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 75%;
+                height: 100vh;
+                background: rgba(0, 0, 0, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 5rem 2rem;
+                transition: right 0.3s ease;
+                border-left: 2px solid #ff4655;
+                gap: 1.8rem;
+                align-items: flex-start;
+                z-index: 1000;
+            }
+            .nav-links.active {
+                right: 0;
+            }
+            .close-menu {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 25px;
+                font-size: 1.8rem;
+                background: none;
+                border: none;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .stats-grid, .offer-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-stats {
+                gap: 1rem;
+            }
+            .roster-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .contact-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="ff-bg"></div>
+<div class="fire-particles" id="fireParticles"></div>
+
+<nav class="navbar">
+    <div class="logo">
+        <span class="logo-icon">🔥</span>
+        <span class="logo-text">BD<span>TOP1</span></span>
+    </div>
+    <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
+    <div class="nav-links" id="navLinks">
+        <button class="close-menu" id="closeMenuBtn"><i class="fas fa-times"></i></button>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#roster" class="nav-link">Roster</a>
+        <a href="#highlights" class="nav-link">Highlights</a>
+        <a href="#contact" class="nav-highlight nav-link">Join Us</a>
+    </div>
+</nav>
+
+<main class="container">
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">🇧🇩 BANGLADESH #1 ESPORTS</div>
+            <h1>Md <span>Siam</span></h1>
+            <p>Professional Free Fire Esports Player • Founder & IGL of Bangladesh TOP 1 • Record Breaker</p>
+            
+            <div class="uid-card">
+                <div class="uid-item">
+                    <i class="fas fa-id-card"></i>
+                    <strong>UID:</strong>
+                    <span id="uid">12065399671</span>
+                    <button class="copy-btn" onclick="copyUID()"><i class="fas fa-copy"></i> Copy</button>
+                </div>
+                <div class="uid-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <strong>Location:</strong>
+                    <span>Kishorganj, Bangladesh</span>
+                </div>
+                <div class="uid-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <strong>Age:</strong>
+                    <span>18+ <i class="fas fa-check-circle" style="color:#00ff80;"></i> Verified</span>
+                </div>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="hero-stat"><div class="number">#1</div><div>BD Ranking</div></div>
+                <div class="hero-stat"><div class="number">103K+</div><div>Peak Viewers</div></div>
+                <div class="hero-stat"><div class="number">15+</div><div>Titles Won</div></div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="glow"></div>
+            <!-- Free Fire Character Image (Base64 SVG as placeholder - looks like FF character) -->
+            <svg class="ff-character-img" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="95" fill="url(#grad1)" stroke="#ff4655" stroke-width="2"/>
+                <defs>
+                    <radialGradient id="grad1" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" style="stop-color:#ff4655;stop-opacity:0.3"/>
+                        <stop offset="100%" style="stop-color:#ff9f4a;stop-opacity:0.1"/>
+                    </radialGradient>
+                </defs>
+                <!-- Helmet/Goggles style -->
+                <rect x="55" y="55" width="90" height="50" rx="20" fill="#ff4655" opacity="0.8"/>
+                <circle cx="80" cy="80" r="15" fill="#fff" opacity="0.9"/>
+                <circle cx="120" cy="80" r="15" fill="#fff" opacity="0.9"/>
+                <circle cx="80" cy="80" r="8" fill="#0a0a0a"/>
+                <circle cx="120" cy="80" r="8" fill="#0a0a0a"/>
+                <!-- Mask -->
+                <path d="M70 110 Q100 140 130 110" stroke="#ff9f4a" stroke-width="4" fill="none"/>
+                <!-- Fire logo -->
+                <text x="100" y="170" text-anchor="middle" font-size="30" fill="#ff4655" font-family="Arial">🔥</text>
+                <text x="100" y="190" text-anchor="middle" font-size="12" fill="#ff9f4a" font-family="Orbitron">TOP 1</text>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Stats Highlights -->
+    <div class="stats-grid">
+        <div class="stat-card"><i class="fas fa-trophy"></i><div class="value">15+</div><div>Tournament Wins</div></div>
+        <div class="stat-card"><i class="fas fa-eye"></i><div class="value">103K</div><div>Peak Viewers</div></div>
+        <div class="stat-card"><i class="fas fa-bullseye"></i><div class="value">90%</div><div>Headshot Rate</div></div>
+        <div class="stat-card"><i class="fas fa-users"></i><div class="value">500K+</div><div>Global Fans</div></div>
+    </div>
+
+    <!-- Welcome / About Section -->
+    <div class="section-header" id="about">
+        <div class="tag">WELCOME TO THE HUB</div>
+        <h2>Bangladesh TOP 1 – Ultimate Free Fire Esports Hub</h2>
+    </div>
+
+    <div class="cards-grid">
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-crown"></i></div>
+            <h3>The Visionary: Md Siam</h3>
+            <p>Led by legendary content creator and in-game leader Md Siam, our squad represents the pinnacle of competitive gaming in Bangladesh.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-fire"></i></div>
+            <h3>Pro-Level Gameplay</h3>
+            <p>In-depth breakdowns of squad wipes, grandmaster rank pushes, and zone survival tactics from Bangladesh's best.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-tv"></i></div>
+            <h3>Exclusive Content</h3>
+            <p>Behind-the-scenes access, roster changes, and live streams featuring Md Siam and the Bangladesh TOP 1 team.</p>
+        </div>
+    </div>
+
+    <!-- What We Offer Section -->
+    <div class="section-header">
+        <div class="tag">WHAT WE OFFER</div>
+        <h2>Features & Services</h2>
+    </div>
+
+    <div class="offer-grid">
+        <div class="offer-card"><i class="fas fa-trophy"></i><h4>Esports Coverage</h4><p>Live updates, brackets, results from national & intl tournaments</p></div>
+        <div class="offer-card"><i class="fas fa-gamepad"></i><h4>Pro Gameplay</h4><p>Expert strategies, rank pushes, and zone tactics</p></div>
+        <div class="offer-card"><i class="fas fa-video"></i><h4>Exclusive Content</h4><p>Behind-the-scenes, roster changes, live streams</p></div>
+        <div class="offer-card"><i class="fas fa-users"></i><h4>Gaming Community</h4><p>Connect with Bangladeshi fans, share tips, grow together</p></div>
+    </div>
+
+    <!-- Team Roster Section -->
+    <div class="section-header" id="roster">
+        <div class="tag">THE SQUAD</div>
+        <h2>Bangladesh TOP 1 Roster</h2>
+    </div>
+
+    <div class="roster-grid">
+        <div class="roster-card"><i class="fas fa-crown"></i><h4>Md Siam</h4><p>Captain / IGL</p></div>
+        <div class="roster-card"><i class="fas fa-crosshairs"></i><h4>Rana</h4><p>Assaulter</p></div>
+        <div class="roster-card"><i class="fas fa-scope"></i><h4>Rafi</h4><p>Sniper</p></div>
+        <div class="roster-card"><i class="fas fa-shield-alt"></i><h4>Sakib</h4><p>Support</p></div>
+    </div>
+
+    <!-- Tournament Highlights -->
+    <div class="section-header" id="highlights">
+        <div class="tag">ACHIEVEMENTS</div>
+        <h2>Tournament Highlights</h2>
+    </div>
+
+    <div class="cards-grid">
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-flag-checkered"></i></div>
+            <h3>FFWS Bangladesh</h3>
+            <p>Top 4 finish in Free Fire World Series Bangladesh – A historic run representing the nation.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-medal"></i></div>
+            <h3>Community Clash S3</h3>
+            <p>Champions – Undefeated run throughout the tournament with record-breaking kills.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Record Holders</h3>
+            <ul><li><i class="fas fa-check"></i> 103,189 Peak Viewers</li><li><i class="fas fa-check"></i> Highest Kill Record in BD</li></ul>
+        </div>
+    </div>
+
+    <!-- Contact / Business Inquiries -->
+    <div class="contact-section" id="contact">
+        <h3><i class="fas fa-handshake"></i> Business Inquiries & Sponsorship</h3>
+        <p>For collaborations, sponsorship, or media inquiries with Bangladesh TOP 1</p>
+        <a href="#" class="contact-btn"><i class="fas fa-envelope"></i> Contact Us Now</a>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 Bangladesh TOP 1 | Official Free Fire Esports Team | Led by Md Siam</p>
+    <p style="margin-top: 0.5rem;">UID: 12065399671 | Kishorganj, Bangladesh | 18+ Verified | #BDTop1</p>
+</footer>
+
+<script>
+    // Copy UID function
+    function copyUID() {
+        const uid = document.getElementById("uid").innerText;
+        navigator.clipboard.writeText(uid).then(() => {
+            alert("✅ UID " + uid + " copied!");
+        });
+    }
+
+    // Mobile menu functionality - FIXED
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+
+    function openMenu() {
+        navLinks.classList.add('active');
+    }
+
+    function closeMenu() {
+        navLinks.classList.remove('active');
+    }
+
+    menuBtn.addEventListener('click', openMenu);
+    if (closeMenuBtn) {
+        closeMenuBtn.addEventListener('click', closeMenu);
+    }
+
+    // Close menu when clicking on a link
+    const navItems = document.querySelectorAll('.nav-link');
+    navItems.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId && targetId !== '#') {
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+            closeMenu();
+        });
+    });
+
+    // Close menu when clicking outside on mobile
+    document.addEventListener('click', function(event) {
+        if (window.innerWidth <= 968) {
+            if (!navLinks.contains(event.target) && !menuBtn.contains(event.target)) {
+                closeMenu();
+            }
+        }
+    });
+
+    // Create fire particles
+    function createFireParticles() {
+        const container = document.getElementById('fireParticles');
+        for (let i = 0; i < 50; i++) {
+            const p = document.createElement('div');
+            p.classList.add('fire-particle');
+            const size = Math.random() * 8 + 2;
+            p.style.width = size + 'px';
+            p.style.height = size + 'px';
+            p.style.left = Math.random() * 100 + '%';
+            p.style.top = Math.random() * 100 + '%';
+            p.style.animationDelay = Math.random() * 20 + 's';
+            p.style.animationDuration = 10 + Math.random() * 25 + 's';
+            container.appendChild(p);
+        }
+    }
+    createFireParticles();
+</script>
+</body>
+      </html>
